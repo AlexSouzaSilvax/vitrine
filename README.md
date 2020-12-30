@@ -38,7 +38,7 @@ Vitrine, a inteção é ser realmente uma vitrine, aonde um prestador de serviç
 </p>
 <br>
 
-## GET - Lista todos os usuários.
+## GET - Lista todos os usuários
 
      /usuario
 
@@ -52,7 +52,7 @@ Vitrine, a inteção é ser realmente uma vitrine, aonde um prestador de serviç
 
 <br>
 
-## POST - Salvar um usuario. 
+## POST - Salvar um usuario
 
      /evento/salvar
 
@@ -67,7 +67,7 @@ Vitrine, a inteção é ser realmente uma vitrine, aonde um prestador de serviç
 
 <br>
 
-## POST - Apagar um usuário. 
+## POST - Apagar um usuário
 
      /usuario/apagar
 

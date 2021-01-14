@@ -1,6 +1,8 @@
 import './App.css';
 import iconSearch from './assets/icon-search.png';
-
+import iconLeft from './assets/left.png';
+import iconRigth from './assets/rigth.png';
+import banner from './assets/5.webp';
 function App() {
   return (
     <div className="App">
@@ -30,6 +32,21 @@ function App() {
           </div>
         </div>
       </header>
+      <section className="App-Carrosel">
+        <div className="App-Carrosel-div-left">
+          <div className="App-Carrosel-div-btn-left">
+            <img className="App-Carrosel-div-btn-left-icon" src={iconLeft} alt="icon left banner" />
+          </div>
+        </div>
+        <div className="App-Carrosel-div">
+          <img className="App-Carrosel-div-banner" src={banner} alt="banner" />
+        </div>
+        <div className="App-Carrosel-div-rigth">
+          <div className="App-Carrosel-div-btn-rigth">
+            <img className="App-Carrosel-div-btn-rigth-icon" src={iconRigth} alt="icon rigth banner" />
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

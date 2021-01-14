@@ -255,6 +255,25 @@ button:focus {
   height: 35vh;
 }
 
+.App-Info {
+  min-height: 58vh;
+  background-color: #e7e7e7;
+  display: flex;
+  justify-content: center;
+}
+
+.App-Info-div {
+  width: 80%;
+  background-color: #e7e7e7;
+  display: flex;
+  justify-content: center;
+}
+
+.App-Info-div-lista {
+  width: 80%;
+  background-color: #fff;
+}
+
 @font-face {
   font-family: Harabara;
   src: url(./assets/fonts/HarabaraMaisDemo.otf);

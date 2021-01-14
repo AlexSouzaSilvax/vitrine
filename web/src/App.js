@@ -47,6 +47,11 @@ function App() {
           </div>
         </div>
       </section>
+      <section className="App-Info">
+        <div className="App-Info-div">
+          <div className="App-Info-div-lista"></div>
+        </div>
+      </section>
     </div>
   );
 }

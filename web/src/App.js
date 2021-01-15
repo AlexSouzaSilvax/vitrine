@@ -67,9 +67,10 @@ function App() {
     <div className="App">
       <Header />
       {listaCarrosel[carroselSelecionado]}
-      <section className="App-Info">
-        <div className="App-Info-div">
-          <div className="App-Info-div-lista"></div>
+      <section className="App-Body">
+        <div className="App-Body-div">
+          <div className="App-Body-div-info"></div>
+          <div className="App-Body-div-lista"></div>
         </div>
       </section>
     </div>

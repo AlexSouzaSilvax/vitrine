@@ -283,22 +283,32 @@ button:focus {
   background-color: #f3f3f3;
 }
 
-.App-Info {
-  min-height: 58vh;
-  background-color: #e7e7e7;
+.App-Body {
+  min-height: 58vh;  
   display: flex;
   justify-content: center;
 }
 
-.App-Info-div {
+.App-Body-div {
   width: 80%;
   background-color: #e7e7e7;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-Info-div-lista {
+.App-Body-div-info {
   width: 80%;
+  min-height: 8vh;
+  margin-top: 20px;
+  border-radius: 4px;    
+  background-color: #fff;
+}
+
+.App-Body-div-lista {
+  width: 80%;
+  min-height: 46vh;
+  margin-top: 20px;
   background-color: #fff;
 }
 

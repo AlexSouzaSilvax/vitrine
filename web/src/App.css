@@ -1,318 +1,364 @@
 * {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .App {
-  min-height: 100vh;
-  background-color: #e7e7e7;
+    min-height: 100vh;
+    background-color: #e7e7e7;
 }
 
 .App-header {
-  min-height: 7vh;
-  background-color: #2292ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    min-height: 7vh;
+    background-color: #2292ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .App-header-div {
-  width: 70%;
-  height: 6vh;
-  display: flex;
-  flex-direction: row;
+    width: 70%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
 }
 
 .App-header-div-logo {
-  width: 20%;
-  height: 6vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: 20%;
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .App-header-div-logo:hover {
-  cursor: default;
+    cursor: default;
 }
 
 .App-header-div-logo-texto {
-  font-family: Harabara;
-  font-weight: 700;
-  letter-spacing: 0.7rem;
-  font-size: 20px;
-  color: #fff;
+    font-family: Harabara;
+    font-weight: 700;
+    letter-spacing: 0.7rem;
+    font-size: 20px;
+    color: #fff;
 }
 
 .App-header-div-logo-subTexto {
-  padding-right: 6px !important;
-  font-size: 12px;
-  color: #ddd;
+    padding-right: 6px !important;
+    font-size: 12px;
+    color: #ddd;
 }
 
 .App-header-div-pesquisa {
-  width: 60%;
-  height: 6vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: 60%;
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .App-header-div-pesquisa-cardInput {
-  padding: 10px;
-  width: 90%;
-  height: 4vh;
-  border-radius: 3px;
-  background-color: #f5f5f5;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    padding: 10px;
+    width: 90%;
+    height: 4vh;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .App-header-div-pesquisa-input {
-  width: 95%;
-  height: 3vh;
-  font-size: 16px;
-  background-color: #f5f5f5;
-  border: none;
-  text-decoration: none;
-  color: #909090;
+    width: 95%;
+    height: 3vh;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    border: none;
+    text-decoration: none;
+    color: #909090;
 }
+
 
 /* remove o border quando clickado */
+
 input:focus,
 button:focus {
-  outline: 0;
+    outline: 0;
 }
 
+
 /*altera estilos do placeholder*/
+
 ::-webkit-input-placeholder {
-  font-size: 16px;
-  color: #cecece;
-  font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #cecece;
+    font-family: "Roboto", sans-serif;
 }
 
 :-moz-placeholder {
-  font-size: 16px;
-  color: #cecece;
-  font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #cecece;
+    font-family: "Roboto", sans-serif;
 }
 
 ::-moz-placeholder {
-  font-size: 16px;
-  color: #cecece;
-  font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #cecece;
+    font-family: "Roboto", sans-serif;
 }
 
 :-ms-input-placeholder {
-  font-size: 16px;
-  color: #cecece;
-  font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #cecece;
+    font-family: "Roboto", sans-serif;
 }
 
 .App-header-div-pesquisa-divisao {
-  margin-left: 8px;
-  width: 1px;
-  height: 3vh;
-  background-color: #d3d3d3;
+    margin-left: 8px;
+    width: 1px;
+    height: 3vh;
+    background-color: #d3d3d3;
 }
 
 .App-header-div-pesquisa-btn {
-  margin-left: 8px;
-  width: 50px;
-  height: 3vh;
-  background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin-left: 8px;
+    width: 50px;
+    height: 3vh;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .App-header-div-pesquisa-btn:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .App-header-div-pesquisa-btn-icon {
-  width: 20px;
+    width: 20px;
 }
 
 .App-header-div-acesso {
-  width: 15%;
-  height: 6vh;
-  background-color: #2292ff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+    width: 15%;
+    height: 6vh;
+    background-color: #2292ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .App-header-div-acesso-btn {
-  color: #f5f5f5;
-  border: none;
-  background-color: #2292ff;
-  margin: 2px;
-  font-size: 16px;
-  font-weight: 500;
+    color: #f5f5f5;
+    border: none;
+    background-color: #2292ff;
+    margin: 2px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .App-header-div-acesso-btn:hover {
-  cursor: pointer;
-  color: #fff;
+    cursor: pointer;
+    color: #fff;
 }
 
 .App-Carrosel {
-  width: 100%;
-  min-height: 34vh;
-  background-color: #e7e7e7;
-  display: flex;
-  justify-content: center;
+    width: 100%;
+    min-height: 34vh;
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
 }
 
 .App-Carrosel:hover .App-Carrosel-div-left {
-  display: flex;
+    display: flex;
 }
 
 .App-Carrosel:hover .App-Carrosel-div-rigth {
-  display: flex;
+    display: flex;
 }
 
 .App-Carrosel:hover .App-Carrosel-div-btn-left {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .App-Carrosel:hover .App-Carrosel-div-btn-rigth {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .App-Carrosel-div-left {
-  display: none;
-  width: 5%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+    display: none;
+    width: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .App-Carrosel-div-rigth {
-  display: none;
-  width: 5%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+    display: none;
+    width: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .App-Carrosel-div-btn-left {
-  width: 40px;
-  height: 70px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 40px;
+    height: 70px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .App-Carrosel-div-btn-left:hover {
-  cursor: pointer;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;
 }
 
 .App-Carrosel-div-btn-rigth {
-  width: 40px;
-  height: 70px;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 40px;
+    height: 70px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .App-Carrosel-div-btn-rigth:hover {
-  cursor: pointer;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;
 }
 
 .App-Carrosel-div-btn-left-icon {
-  padding-right: 5px;
+    padding-right: 5px;
 }
 
 .App-Carrosel-div-btn-rigth-icon {
-  padding-left: 5px;
+    padding-left: 5px;
 }
 
 .App-Carrosel-div {
-  width: 90%;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: 90%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .App-Carrosel-div-banner {
-  width: 100%;
-  height: 35vh;
+    width: 100%;
+    height: 35vh;
 }
 
 .App-Carrosel-div-qtdBanner {
-  margin-top: -19px;
-  width: 100%;
-  height: 2vh;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
+    margin-top: -19px;
+    width: 100%;
+    height: 2vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }
 
 .App-Carrosel-div-qtdBanner-item-ativo {
-  margin-left: 10px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #2292ff;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2292ff;
 }
 
 .App-Carrosel-div-qtdBanner-item {
-  margin-left: 10px;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: #f3f3f3;
+    margin-left: 10px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
 }
 
 .App-Body {
-  min-height: 58vh;  
-  display: flex;
-  justify-content: center;
+    min-height: 58vh;
+    display: flex;
+    justify-content: center;
 }
 
 .App-Body-div {
-  width: 80%;
-  background-color: #e7e7e7;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 80%;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .App-Body-div-info {
-  width: 80%;
-  min-height: 8vh;
-  margin-top: 20px;
-  border-radius: 4px;    
-  background-color: #fff;
+    width: 80%;
+    min-height: 8vh;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: #fff;
 }
 
+.App-Body-div-info-lista {
+    list-style-type: none;
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.App-Body-div-info-lista-item {
+    width: 100%;
+    min-height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.App-Body-div-info-lista-item-divInfo {    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.App-Body-div-info-lista-item-divInfo-label {
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.App-Body-div-info-lista-item-divInfo-labelBtn {
+    color: #3483fa;
+}
+
+.App-Body-div-info-lista-item-divInfo-labelBtn:hover {
+    cursor: pointer;
+    color: #1259c3;
+}
+
+
+
 .App-Body-div-lista {
-  width: 80%;
-  min-height: 46vh;
-  margin-top: 20px;
-  background-color: #fff;
+    width: 80%;
+    min-height: 46vh;
+    margin-top: 20px;
+    background-color: #fff;
 }
 
 @font-face {
-  font-family: Harabara;
-  src: url(./assets/fonts/HarabaraMaisDemo.otf);
+    font-family: Harabara;
+    src: url(./assets/fonts/HarabaraMaisDemo.otf);
 }

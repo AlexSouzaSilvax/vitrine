@@ -10,8 +10,12 @@ import banner2 from "./assets/2.webp";
 import banner3 from "./assets/3.webp";
 import banner4 from "./assets/4.webp";
 import banner6 from "./assets/6.webp";
+import iconCartaoCredito from "./assets/credit-card.svg";
+import iconBoleto from "./assets/payment-agreement.svg";
+import iconMaisOpcoes from "./assets/view-more.svg";
 
 function App() {
+
   const [banners] = useState([
     {
       id: 0,
@@ -38,7 +42,36 @@ function App() {
       img: banner6,
     },
   ]);
+
   const [carroselSelecionado, setCarroselSelecionado] = useState(0);
+
+  const infos = [
+    {
+      id: 0,
+      icon: iconCartaoCredito,
+      altIcon: "icone cartao credito",
+      label: "Até 12 vezes sem juros",
+      labelBtn: "Ver mais",
+      onClick: () => alert("Teste")
+    },
+    {
+      id: 1,
+      icon: iconBoleto,
+      altIcon: "icone boleto bancario",
+      label: "À vista no boleto bancário",
+      labelBtn: "Ver mais",
+      onClick: () => alert("Teste")
+    },
+    {
+      id: 2,
+      icon: iconMaisOpcoes,
+      altIcon: "icone mais opções para pagamento",
+      label: "Mais formas de pagamento",
+      labelBtn: "Ver todos",
+      onClick: () => alert("Teste")
+    }
+  ]
+
   useEffect(() => {
     if (carroselSelecionado === banners.length) {
       setCarroselSelecionado(0);
@@ -63,21 +96,39 @@ function App() {
     );
   });
 
+  const listaInfos = infos.map(i => {
+    return (
+      <CardInfo
+        icon={i.icon}
+        altIcon={i.altIcon}
+        label={i.label}
+        labelBtn={i.labelBtn}
+        onClick={i.onClick} />
+    )
+  });
+
   return (
     <div className="App">
       <Header />
       {listaCarrosel[carroselSelecionado]}
       <section className="App-Body">
         <div className="App-Body-div">
-          <div className="App-Body-div-info"></div>
-          <div className="App-Body-div-lista"></div>
+          <div className="App-Body-div-info">
+            <ul className="App-Body-div-info-lista">
+              {listaInfos}
+            </ul>
+          </div>
+          <div className="App-Body-div-lista">
+            {/* add 4 card, com 2 colunas, 2 produto e 2 serviço, estilo do ML */}
+            {/* add lista de N cards com 4 colunas, tanto de produto como de serviço */}
+          </div>
         </div>
       </section>
     </div>
   );
 }
 
-function Header({}) {
+function Header({ }) {
   return (
     <header className="App-header">
       <div className="App-header-div">
@@ -169,6 +220,23 @@ function Carrosel({ banner, lista, onClickLeft, onClickRigth }) {
         </div>
       </div>
     </section>
+  );
+}
+
+function CardInfo({ icon, altIcon, label, labelBtn, onClick }) {
+  return (
+    <li className="App-Body-div-info-lista-item">
+      <div>
+        <img
+          src={icon}
+          alt={altIcon}
+        />
+      </div>
+      <div className="App-Body-div-info-lista-item-divInfo">
+        <p className="App-Body-div-info-lista-item-divInfo-label">{label}</p>
+        <a onClick={onClick}><p className="App-Body-div-info-lista-item-divInfo-labelBtn">{labelBtn}</p></a>
+      </div>
+    </li>
   );
 }
 

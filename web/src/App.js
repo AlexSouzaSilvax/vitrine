@@ -17,6 +17,8 @@ import iconProdLimpeza from "./assets/produtos-de-limpeza.jpg";
 import iconProdEletros from "./assets/produtos-de-eletrodomesticos.png";
 import iconServMontManuMicro from "./assets/servicos-de-montagem-manutencao-micro.png";
 import iconServSoftware from "./assets/servicos-de-criacao-softwares.png";
+import iconProdutos from "./assets/produtos.png";
+import iconServicos from "./assets/servicos.png";
 
 function App() {
 
@@ -123,19 +125,29 @@ function App() {
             </ul>
           </div>
           <div className="App-Body-div-lista">
-            {/* add 4 card, com 2 colunas, 2 produto e 2 serviço, estilo do ML */}
-
             <div className="App-Body-div-lista-cards">
               <CardProdServ alt="icon-produtos" source={iconProdEletros} label="Eletrodomésticos" />
               <CardProdServ alt="icon-produtos" source={iconProdLimpeza} label="Limpeza" />
             </div>
-
             <div className="App-Body-div-lista-cards">
               <CardProdServ alt="icon-servicos" source={iconServMontManuMicro} label="Montagem e Manutenção Micro" />
               <CardProdServ alt="icon-servicos" source={iconServSoftware} label="Criação de Softwares e Aplicativos" />
             </div>
 
-            {/* add lista de N cards com 4 colunas, tanto de produto como de serviço */}
+            <div className="App-Body-div-lista-cards App-Body-div-lista-cards2">
+              <CardProdServ2 alt="icon-servicos" source={iconProdutos} />
+              <CardProdServ2 alt="icon-servicos" source={iconProdutos} />
+              <CardProdServ2 alt="icon-servicos" source={iconProdutos} />
+              <CardProdServ2 alt="icon-servicos" source={iconProdutos} />
+            </div>
+
+            <div className="App-Body-div-lista-cards App-Body-div-lista-cards2">
+              <CardProdServ2 alt="icon-servicos" source={iconServicos} />
+              <CardProdServ2 alt="icon-servicos" source={iconServicos} />
+              <CardProdServ2 alt="icon-servicos" source={iconServicos} />
+              <CardProdServ2 alt="icon-servicos" source={iconServicos} />
+            </div>
+
           </div>
         </div>
       </section>
@@ -257,11 +269,17 @@ function CardInfo({ icon, altIcon, label, labelBtn, onClick }) {
 
 function CardProdServ({ alt, source, label }) {
   return (
-    <div className="App-Body-div-lista-cards">
-      <div className="App-Body-div-lista-cards-prodserv">
-        <img alt={alt} src={source} className="App-Body-div-lista-cards-prodserv-img" />
-        <p className="App-Body-div-lista-cards-prodserv-label">{label}</p>
-      </div>
+    <div className="App-Body-div-lista-cards-prodserv">
+      <img alt={alt} src={source} className="App-Body-div-lista-cards-prodserv-img" />
+      <p className="App-Body-div-lista-cards-prodserv-label">{label}</p>
+    </div>
+  );
+}
+
+function CardProdServ2({ alt, source }) {
+  return (
+    <div className="App-Body-div-lista-cards-prodserv2">
+      <img alt={alt} src={source} className="App-Body-div-lista-cards-prodserv-img2" />
     </div>
   );
 }

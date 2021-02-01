@@ -391,6 +391,7 @@ button:focus {
     width: 100%;
     height: 250px;
     border-radius: 4px;
+    padding: 20px;
 }
 
 .App-Body-div-lista-cards-prodserv-label {

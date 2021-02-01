@@ -13,6 +13,10 @@ import banner6 from "./assets/6.webp";
 import iconCartaoCredito from "./assets/credit-card.svg";
 import iconBoleto from "./assets/payment-agreement.svg";
 import iconMaisOpcoes from "./assets/view-more.svg";
+import iconProdLimpeza from "./assets/produtos-de-limpeza.jpg";
+import iconProdEletros from "./assets/produtos-de-eletrodomesticos.png";
+import iconServMontManuMicro from "./assets/servicos-de-montagem-manutencao-micro.png";
+import iconServSoftware from "./assets/servicos-de-criacao-softwares.png";
 
 function App() {
 
@@ -120,6 +124,17 @@ function App() {
           </div>
           <div className="App-Body-div-lista">
             {/* add 4 card, com 2 colunas, 2 produto e 2 serviço, estilo do ML */}
+
+            <div className="App-Body-div-lista-cards">
+              <CardProdServ alt="icon-produtos" source={iconProdEletros} label="Eletrodomésticos" />
+              <CardProdServ alt="icon-produtos" source={iconProdLimpeza} label="Limpeza" />
+            </div>
+
+            <div className="App-Body-div-lista-cards">
+              <CardProdServ alt="icon-servicos" source={iconServMontManuMicro} label="Montagem e Manutenção Micro" />
+              <CardProdServ alt="icon-servicos" source={iconServSoftware} label="Criação de Softwares e Aplicativos" />
+            </div>
+
             {/* add lista de N cards com 4 colunas, tanto de produto como de serviço */}
           </div>
         </div>
@@ -237,6 +252,17 @@ function CardInfo({ icon, altIcon, label, labelBtn, onClick }) {
         <a onClick={onClick}><p className="App-Body-div-info-lista-item-divInfo-labelBtn">{labelBtn}</p></a>
       </div>
     </li>
+  );
+}
+
+function CardProdServ({ alt, source, label }) {
+  return (
+    <div className="App-Body-div-lista-cards">
+      <div className="App-Body-div-lista-cards-prodserv">
+        <img alt={alt} src={source} className="App-Body-div-lista-cards-prodserv-img" />
+        <p className="App-Body-div-lista-cards-prodserv-label">{label}</p>
+      </div>
+    </div>
   );
 }
 
